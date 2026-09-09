@@ -42,10 +42,22 @@ email = " maisi.com "
 #print(5 >= 2)
 #print(10 > 5)
 
-name = "asha"
-score = 16
-print(f"student: {name}, Score: {score}")
+#name = "asha"
+#score = 16
+#print(f"student: {name}, Score: {score}")
 
-address = "pokhara"
-ward = "12"
-print(f"address: {address}, ward: {ward}")
+#address = "pokhara"
+#ward = "12"
+#print(f"address: {address}, ward: {ward}")
+
+
+username = input("What is your username? ")
+age = input("What is your age? ")
+print("Your user name is: " + username)
+print(type(username))
+print(f"You must be {age} years old")
+print(f"You will be {int(age) + 2} years old after 2 years")
+
+print(int("10"))
+print(float("3.14"))
+print(str(100))
