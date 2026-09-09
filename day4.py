@@ -16,22 +16,27 @@
 
 #1 - 10 sum??
 
-total = 0
-for n in range(1,10):
+#total = 0
+#for n in range(1,10):
     #total += n
     #total *= n
-    total = total + n
-    print(total)
+    #total = total + n
+    #print(total)
 
-count = 3
-while count > 0:
-    print(count)
-    count = count-1
+#count = 3
+#while count > 0:
+    #print(count)
+    #count = count-1
     #count = count - 1
-print("Finished")
+#print("Finished")
 
-for n in range(10):
-    if n %2 == 0:
-        print("Even:" + str (n))
-    else:
-        print("Odd:" + str(n))
+#for n in range(10):
+    #if n %2 == 0:
+        #print("Even:" + str (n))
+    #else:
+        #print("Odd:" + str(n))
+
+for row in range (3):
+    for col in range(3):
+        print(f"({row},{col})", end=" ")
+    print()
