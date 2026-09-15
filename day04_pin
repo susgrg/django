@@ -1,0 +1,21 @@
+CORRECT_PIN = "1234"
+
+attempts = 0
+
+while attempts < 3:
+    pin = input("Enter PIN: ")
+
+    if pin == "":
+        continue
+
+    attempts += 1
+
+    if pin == CORRECT_PIN:
+        print("Welcome!")
+        break
+    else:
+        print("Wrong PIN")
+        print("Attempts remaining:", 3 - attempts)
+
+if attempts == 3 and pin != CORRECT_PIN:
+    print("Account locked")
