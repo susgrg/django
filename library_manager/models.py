@@ -24,6 +24,13 @@ class Library:
         for i , book in enumerate(self.books):
             print(f"{i+1}: {book.title}")
 
+    def remove_book(self,title):
+        for book in self.books:
+            if book.title.lower == title.lower():
+                self.books.remove(book)
+                return book
+        return None
+
 book1 = Book("Ikigai","James",2021)
 book2 = Book("The Last of US", "Haalnd",2021)
 
